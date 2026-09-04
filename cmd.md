@@ -10,13 +10,7 @@ cd python-docs-samples/appengine/standard_python3/hello_world
 ```
 **Task 2:**
 ```bash
-cat << 'EOF' >> app.yaml
-
-automatic_scaling:
-  max_instances: 1
-EOF
-
-gcloud app create --region=europe-west
+gcloud app create --region=<region>
 gcloud app deploy --quiet
 ```
 
